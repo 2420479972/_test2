@@ -19,8 +19,14 @@ const generateRandomAddress = () => {
 // 生成随机时间的函数（不超过当前时间）
 const generateRandomTime = () => {
   const now = DateTime.now();
-  const randomDaysAgo = Math.floor(Math.random() * 100); // 随机生成0-100天前的时间
-  return now.minus({ days: randomDaysAgo }).toSeconds();
+  const randomDaysAgo = Math.floor(Math.random() * 7); // 随机生成0-7天前的时间
+  const randomHours = Math.floor(Math.random() * 24); // 随机生成0-23小时
+  const randomMinutes = Math.floor(Math.random() * 60); // 随机生成0-59分钟
+  
+  return now
+    .minus({ days: randomDaysAgo })
+    .set({ hour: randomHours, minute: randomMinutes })
+    .toSeconds();
 };
 
 // 生成随机金额的函数

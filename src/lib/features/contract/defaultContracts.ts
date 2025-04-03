@@ -1,5 +1,7 @@
 export const ERC1229Contract = {
-  address: "0x3909E03e3A8C102733658C21Ef662B86096C492D",
+  // address: "0x8E941c2141e37c8c427565d7415a179E3677ab24", //正式
+  address: "0x3909E03e3A8C102733658C21Ef662B86096C492D", // 测试
+
   abi: [
     {
       "inputs": [],
