@@ -1,0 +1,12 @@
+重新布署记得删除dist文件
+
+执行pnpm install 安装依赖
+
+执行pnpm run build
+
+打开w3name.mjs
+修改did和email
+执行node w3name.mjs得到链接
+
+
+npx serve -s dist

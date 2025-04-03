@@ -1,0 +1,16 @@
+1、打开/src/main.tsx，将第39行的'https://bsc-dataseed.bnbchain.org'修改为需要的RPC；
+
+
+BSC 主网（ChainID 0x38，十进制为 56）
+https://bsc-dataseed.bnbchain.org
+https://bsc-dataseed.nariox.org
+https://bsc-dataseed.defibit.io
+https://bsc-dataseed.ninicoin.io
+https://bsc.nodereal.io
+https://bsc-dataseed-public.bnbchain.org
+https://bnb.rpc.subquery.network/public
+
+BSC 测试网 （ChainID 0x61，十进制为 97）
+https://bsc-testnet-dataseed.bnbchain.org
+https://bsc-testnet.bnbchain.org
+https://bsc-prebsc-dataseed.bnbchain.org

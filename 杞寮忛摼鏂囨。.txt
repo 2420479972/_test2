@@ -1,0 +1,2 @@
+1、打开/src/main.tsx，将第4行与第23行的bscTestnet修改为需要的链，如bsc；
+2、打开/src/lib/features/contract/defaultContracts.ts，将第二行的address修改为主网合约地址；

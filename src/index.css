@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #ffffff;
+  font-size: calc((16 / 375) * 100vw);
+  background-color: #041323;
+  background-image: url("/bg.webp");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  line-height: 1;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.25em;
+}
+
+/* 隐藏 Firefox 中的箭头按钮 */
+input[type="datetime-local"]::-moz-calendar-picker {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.25em;
+}
+
+:root {
+  --NoticeBar-width: 0px;
+}
+
+@keyframes firstScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes subsequentScroll {
+  0% {
+    transform: translateX(var(--NoticeBar-width));
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
